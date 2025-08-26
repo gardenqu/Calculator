@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+
+
+
+
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:padding="2dp">
+
+        <!-- Row 1 -->
+        <Button android:text="@string/ac"
+            android:tag="@string/ac"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            />
+        <Button android:text="@string/plus_minus"
+            android:tag="@string/minus"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            />
+        <Button android:text="@string/percent"
+            android:tag="@string/percent"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            />
+        <Button android:text="@string/divide"
+            android:tag="@string/divide"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <!-- Row 2 -->
+        <Button android:text="@string/seven"
+            android:tag="@string/seven"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            />
+        <Button android:text="@string/eight"
+            android:tag="@string/eight"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/nine"
+            android:tag="@string/nine"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/multiplication"
+            android:tag="@string/multiplication"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+        <!-- Row 3 -->
+
+        <Button android:text="@string/four"
+            android:tag="@string/four"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/five"
+            android:tag="@string/five"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/six"
+            android:tag="@string/six"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/minus"
+            android:tag="@string/minus"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+
+        <!-- Row 4 -->
+
+        <Button android:text="@string/one"
+            android:tag="@string/one"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/two"
+            android:tag="@string/two"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/three"
+            android:tag="@string/three"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/plus"
+            android:tag="@string/plus"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+
+
+        <!-- Row 5 -->
+        <Button android:text="@string/zero"
+            android:tag="@string/zero"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"/>
+
+        <Button android:text="@string/dot"
+            android:tag="@string/dot"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button android:text="@string/equal"
+            android:tag="@string/equal"
+            android:onClick="onButtonClick"
+            style="@style/CalculatorButton"
+            app:backgroundTint="@null"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+    </GridLayout>
+</LinearLayout>

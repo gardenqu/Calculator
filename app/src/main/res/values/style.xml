@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalculatorButton">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/square_button</item>
+        <item name="android:shadowColor">@color/neonPink</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">8</item>
+        <item name="android:textColor">@color/neonRed</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
