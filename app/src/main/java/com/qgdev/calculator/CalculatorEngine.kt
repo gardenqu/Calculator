@@ -18,12 +18,20 @@ class CalculatorEngine {
     fun calculate(): String {
         return try {
             val exp = expression.toString()
+                .replace('×', '*')
+                .replace('÷', '/')
+                .replace('∙', '*')
+                .replace('•', '*')
+                .replace('x', '*')
+                .replace('X', '*')
+
             val result = evaluateSimple(exp)
             result.toString()
         } catch (e: Exception) {
             "0"
         }
     }
+
 
     private fun precedence(op: Char): Int {
         return when (op) {
